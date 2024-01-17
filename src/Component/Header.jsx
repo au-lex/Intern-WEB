@@ -6,8 +6,8 @@ const Header = () => {
     <>
     <header className=' fixed shadow-sm z-50 bg-white w-full flex justify-between px-4 pb-4'>
 
-<div> 
-  <h1>logo</h1>
+<div className='b500 '> 
+ <h1>logo</h1>
 </div>
 <div className='pt-4'>
 
