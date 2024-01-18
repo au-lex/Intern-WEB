@@ -4,15 +4,23 @@ import { CgMenuRight } from "react-icons/cg";
 const Header = () => {
   return (
     <>
-    <header className=' fixed shadow-sm z-50 bg-white w-full flex justify-between px-4 pb-4'>
+    <header className=' fixed shadow-sm z-50 bg-white w-full  py-4  flex justify-between lg:px-[5rem] px-4 pb-4'>
 
 <div className='b500 '> 
  <h1>logo</h1>
 </div>
-<div className='pt-4'>
+
+<nav className=' lg:flex space-x-[2rem] hidden'>
+  <a href="" className='block font-medium'>Home</a>
+  <a href="" className='block font-medium'>About</a>
+  <a href="" className='block font-medium'>Faq</a>
+  <a href="" className='block font-medium'>Contact</a>
+  
+</nav>
+<div className='pt-4 lg:hidden'>
 
 <div className='bg-orange-500 p-1 text-slate-100 rounded-[10px] '>
-  <CgMenuRight className='text-[2rem]' /></div>
+  <CgMenuRight className='text-[2rem] ' /></div>
 </div>
 
 
