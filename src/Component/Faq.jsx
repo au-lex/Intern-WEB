@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import 'tailwindcss/tailwind.css';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+
 
 const FAQAccordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleAccordionClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
+    const [activeIndex, setActiveIndex] = useState(null);
+    
+    const handleAccordionClick = (index) => {
+        setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    };
+    const [visibleFAQs, setVisibleFAQs] = useState(5); 
+    const handleShowMore = () => {
+        setVisibleFAQs((prevCount) => prevCount + 2);
+      };
 
   const faqItems = [
     {
@@ -80,17 +85,18 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto mt-8 ">
-        <h2>FAQ</h2>
-      {faqItems.map((item, index) => (
-        <div key={index} className="mb-4 bg-white shadow-md rounded-md overflow-hidden">
+    <div className="lg:px-[2rem] mt-8 lg:w-full" data-aos="fade-up" data-aos-duration="1000">
+      <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+      {faqItems.slice(0, visibleFAQs).map((item, index) => (
+        <div key={index} className="mb-4 bg-white rounded-md overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
           <div
-            className={`p-4 cursor-pointer hover:bg-gray-100 ${
+            className={`p-4 cursor-pointer flex justify-between items-center hover:bg-gray-100 ${
               activeIndex === index ? 'bg-gray-100' : ''
             }`}
             onClick={() => handleAccordionClick(index)}
           >
             <p className="text-lg font-semibold">{item.question}</p>
+            {activeIndex === index ? <FaChevronUp className='text-orange-500' size={20} /> : <FaChevronDown className='text-orange-500' size={20} />}
           </div>
           {activeIndex === index && (
             <div className="p-4">
@@ -99,6 +105,16 @@ const FAQAccordion = () => {
           )}
         </div>
       ))}
+      {visibleFAQs < faqItems.length && (
+        <div className='text-center my-[1rem]' data-aos="fade-up" data-aos-duration="1400">
+          <button
+            className="bg-orange-500 text-white py-2 px-4 rounded-md"
+            onClick={handleShowMore}
+          >
+            Show More
+          </button>
+        </div>
+      )}
     </div>
   );
 };
