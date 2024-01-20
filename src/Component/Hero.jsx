@@ -20,13 +20,14 @@ const Hero = () => {
 
           <div className='lg:w-[50%]'>
 
-            <h1 className='text-[1.6rem] lg:text-[2.6rem] w-full text-center lg:text-left mb-[rem] text-slate-800 font-bold'
+            <h1 className='text-[1.6rem] lg:text-[2.6rem] w-full textcenter lg:text-left mb-[rem] text-slate-800 font-bold'
              data-aos="fade-up" data-aos-duration="1000">
               Welcome to <span className='text-orange-900'>TAACODEEP TECHNOLOGIES</span> Internship Program!
             </h1>
 
             <p className="text-lg text-gray-600 my-4 lg:w-[90%]" data-aos="fade-up" data-aos-duration="1400">
-              Embark on a journey of learning, innovation, and growth. Our internship program offers hands-on experience in software development, app creation, and web solutions. Join us to explore our cutting-edge tech stack, adopt modern development methodologies, and collaborate with industry experts. Make valuable contributions to innovative projects, and experience personal and professional development in a supportive environment.
+            
+Are you passionate about building a career in tech? Our internship program offers hands-on experience in software development, app creation, and web solutions. Join our experienced teams to explore modern development methodologies, and collaborate with industry experts.
             </p>
 
             <div className="lg:flex space-x-4 w-full mb-[3rem] hidden lg:mt-[2rem]" data-aos="fade-up" data-aos-duration="1800">
@@ -51,13 +52,17 @@ const Hero = () => {
 
         </section>
 
-        <div className="about w-full lg:mt-[4rem]  lg:flex lg:justify-around" data-aos="fade-up" data-aos-duration="1800">
+        <div className="about w-full lg:mt-[4rem]  lg:flex lg:justify-around"
+         data-aos="fade-up" data-aos-duration="1800">
 
           <section className="abtdesc b border-2 px-1 rounded-[10px] lg:w-[40%]">
-            <h2 className='text-2xl font-semibold text-slate-800 w-[35%] border-b-2 border-orange-600 mb-4' data-aos="fade-up" data-aos-duration="1000">About us:</h2>
-            <h3 className='font-bold text-slate-800 mt-2' data-aos="fade-up" data-aos-duration="1200">About the program</h3>
+            <h2 className='text-2xl font-semibold text-slate-800 lg:w-[60%] border-b-2
+             border-orange-600 mb-4 pb-4' data-aos="fade-up"
+              data-aos-duration="1000">About the Program:</h2>
+            {/* <h3 className='font-bold text-slate-800 mt-2' data-aos="fade-up" data-aos-duration="1200">About the program</h3> */}
             <p className='my-4 text-lg text-slate-800' data-aos="fade-up" data-aos-duration="1400">
-              The Taacodeep Technologies internship program is a comprehensive and hands-on learning opportunity that aims to equip interns with practical skills and knowledge. This program covers various aspects of software development, app creation, and web solutions, exposing interns to our tech stack, development methodologies, and collaborative work environment. Within our dynamic and supportive atmosphere, interns will have the chance to work on real-world projects, learn from industry experts, and make valuable contributions to our innovative initiatives. As an intern, you can expect to grow and develop your skills in a stimulating and encouraging environment.
+             This internship will empower you with practical skills, industry exposure, and a supportive community, laying the foundation for a successful career. Explore advanced tech stacks, collaborate within our dynamic environment, and engage in skill development programs. Foster connections through networking opportunities, embraced by our inclusive and supportive culture. Receive career development guidance for a comprehensive learning journey. Don't miss the chance to be part of a transformative experience at Taacodeep Technologies.
+
             </p>
           </section>
 
