@@ -5,7 +5,7 @@ const Header = () => {
    const [openMenu, setOpenMenu] = useState(false);
 
   const handleClick = () => {
-    setOpenMenu(!openMenu); // Toggle the value of openMenu
+    setOpenMenu(!openMenu); 
   };
   return (
     <>
@@ -18,10 +18,7 @@ const Header = () => {
  <div>
     
 
-      {/* Button to toggle the menu */}
-      {/* <button >
-        {openMenu ? 'Close Menu' : 'Open Menu'}
-      </button> */}
+     
     </div>
 <nav className=' lg:flex space-x-[2rem] hidden'>
   <a href="" className='block font-medium'>Home</a>

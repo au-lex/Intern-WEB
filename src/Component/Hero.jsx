@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FAQAccordion from './Faq';
+import Banner from './Banner';
 
 const Hero = () => {
   useEffect(() => {
@@ -31,8 +32,10 @@ Are you passionate about building a career in tech? Our internship program offer
             </p>
 
             <div className="lg:flex space-x-4 w-full mb-[3rem] hidden lg:mt-[2rem]" data-aos="fade-up" data-aos-duration="1800">
-              <button className='w-[40%] py-3 border text-slate-800 border-orange-500 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300'>Read More</button>
-              <button className='w-[40%] py-3 bg-orange-500 rounded-full text-white font-semibold text-lg hover:bg-green-600 transition duration-300'>Register</button>
+              <button className='w-[40%] py-3 border text-slate-800 border-orange-500 rounded-full
+               font-semibold text-lg hover:bg-orange-500 hover:text-white transition duration-300'>Read More</button>
+              <button className='w-[40%] py-3 border bg-orange-500 rounded-full text-white font-semibold text-lg
+               hover:bg-white hover:text-orange-500   hover:border-orange-500 transition duration-300'>Register</button>
             </div>
 
           </div>
@@ -51,6 +54,8 @@ Are you passionate about building a career in tech? Our internship program offer
           </div>
 
         </section>
+
+        <Banner data-aos="fade-up" data-aos-duration="1400" />
 
         <div className="about w-full lg:mt-[4rem]  lg:flex lg:justify-around"
          data-aos="fade-up" data-aos-duration="1800">
