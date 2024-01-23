@@ -57,7 +57,7 @@ const Header = () => {
 
       {openMenu && (
         <div          data-aos="fade-up"
-        data-aos-duration="1400"  className={`bg-slate-900  ${openMenu ? 'open' : ''}  text-center menubar text-slate-100  mt-[5rem]  pt-8 px-4 w-full z-50
+        data-aos-duration="400"  className={`bg-slate-900  ${openMenu ? 'open' : ''}  text-center menubar text-slate-100  mt-[5rem]  pt-8 px-4 w-full z-50
          h-[10rem] fixed `}>
          <a href="#home" onClick={handleNavLinkClick}  className='block font-medium my-8'>Home</a>
   <a href="#about" onClick={handleNavLinkClick}  className='block font-medium  my-8'>About</a>
