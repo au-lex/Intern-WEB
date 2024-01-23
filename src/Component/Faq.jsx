@@ -85,7 +85,7 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <div className="lg:px-[2rem] mt-8 lg:w-full" data-aos="fade-up" data-aos-duration="1000">
+    <div id='faq' className="lg:px-[2rem] mt-8 lg:w-full" data-aos="fade-up" data-aos-duration="1000">
       <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
       {faqItems.slice(0, visibleFAQs).map((item, index) => (
         <div key={index} className="mb-4 bg-white rounded-md overflow-hidden" data-aos="fade-up" data-aos-duration="1200">

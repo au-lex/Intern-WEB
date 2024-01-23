@@ -3,7 +3,7 @@ import React from 'react';
 
 const Banner = () => {
   return (
-    <section
+    <section 
       data-aos="fade-up"
       data-aos-duration="1400"
       className="banner lg:px-[1rem] mb-[2rem] lg:my-[4rem] w-full relative"
@@ -20,9 +20,10 @@ const Banner = () => {
           Hurry now, register, and start your career journey!
         </p>
         <a
-          href="#register"
+          target='blank'  href="https://docs.google.com/forms/d/e/1FAIpQLSeaqI-rEOpaQDZcYi4RvGRA7e1JJwMAWDuUfJmc5cbSC6oJxg/viewform"
           className="bg-yellow-500 hover:bg-yellow-600 text-indigo-900 font-bold py-2 px-4 rounded-full inline-block transition duration-300"
         >
+          
           Register Now!
         </a>
       </div>

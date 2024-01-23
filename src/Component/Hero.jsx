@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <main className='px-4 pt-[7rem] flex flex-wrap' >
+      <main id='home' data-aos="fade-up" className='px-4 pt-[7rem] flex flex-wrap' >
 
         <section className="hero lg:flex justify-center">
 
@@ -32,10 +32,15 @@ Are you passionate about building a career in tech? Our internship program offer
             </p>
 
             <div className="lg:flex space-x-4 w-full mb-[3rem] hidden lg:mt-[2rem]" data-aos="fade-up" data-aos-duration="1800">
-              <button className='w-[40%] py-3 border text-slate-800 border-orange-500 rounded-full
-               font-semibold text-lg hover:bg-orange-500 hover:text-white transition duration-300'>Read More</button>
+              <button  className='w-[40%] py-3 border text-slate-800 border-orange-500 rounded-full
+               font-semibold text-lg hover:bg-orange-500 hover:text-white transition duration-300'>
+                 <a   href="#read"> Read More</a>
+               </button>
               <button className='w-[40%] py-3 border bg-orange-500 rounded-full text-white font-semibold text-lg
-               hover:bg-white hover:text-orange-500   hover:border-orange-500 transition duration-300'>Register</button>
+               hover:bg-white hover:text-orange-500   hover:border-orange-500 transition duration-300'>
+                
+                <a  target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSeaqI-rEOpaQDZcYi4RvGRA7e1JJwMAWDuUfJmc5cbSC6oJxg/viewform">Register</a>
+                </button>
             </div>
 
           </div>
@@ -49,18 +54,21 @@ Are you passionate about building a career in tech? Our internship program offer
           </div>
 
           <div className="flex space-x-4 w-full mb-[3rem] lg:hidden" data-aos="fade-up" data-aos-duration="1400">
-            <button className='w-[60%] py-3 border text-slate-800 border-orange-500 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300'>Read More</button>
-            <button className='w-[60%] py-3 bg-orange-500 rounded-full text-white font-semibold text-lg hover:bg-green-600 transition duration-300'>Register</button>
+            <button className='w-[60%] py-3 border text-slate-800 border-orange-500 rounded-full font-semibold text-lg hover:bg-blue-700 
+            
+            transition duration-300'> <a   href="#read"> Read More</a></button>
+            <button className='w-[60%] py-3 bg-orange-500 rounded-full text-white font-semibold text-lg
+             hover:bg-green-600 transition duration-300'> <a  target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSeaqI-rEOpaQDZcYi4RvGRA7e1JJwMAWDuUfJmc5cbSC6oJxg/viewform">Register</a></button>
           </div>
 
         </section>
 
-        <Banner data-aos="fade-up" data-aos-duration="1400" />
+        <Banner  data-aos="fade-up" data-aos-duration="1400" />
 
-        <div className="about w-full lg:mt-[4rem]  lg:flex lg:justify-around"
+        <div id='about'  className="about w-full lg:mt-[4rem]  lg:flex lg:justify-around"
          data-aos="fade-up" data-aos-duration="1800">
 
-          <section className="abtdesc b border-2 px-1 rounded-[10px] lg:w-[40%]">
+          <section  className="abtdesc b border-2 px-1 rounded-[10px] lg:w-[40%]">
             <h2 className='text-2xl font-semibold text-slate-800 lg:w-[60%] border-b-2
              border-orange-600 mb-4 pb-4' data-aos="fade-up"
               data-aos-duration="1000">About the Program:</h2>
@@ -83,7 +91,7 @@ Are you passionate about building a career in tech? Our internship program offer
 
         </div>
 
-        <div className="citeria lg:my-[9rem] my-4 w-full flex lg:px-[2rem]" data-aos="fade-up" data-aos-duration="1800">
+        <div id='read' className="citeria lg:my-[9rem] my-4 w-full flex lg:px-[2rem]" data-aos="fade-up" data-aos-duration="1800">
 
           <div class="mb-8 bg-slate-900 rounded-lg w-full p-6 text-gray-100">
             <h2 class="text-3xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Key Requirements 🚀</h2>
@@ -99,7 +107,8 @@ Are you passionate about building a career in tech? Our internship program offer
             </ul>
 
             <div className="mt-[1rem]" data-aos="fade-up" data-aos-duration="2800">
-              <button className=' lg:w-[20%] w-[100%] py-2 bg-orange-500 rounded-full text-white font-semibold text-lg hover:bg-green-600 transition duration-300'>Apply Now</button>
+              <button className=' lg:w-[20%] w-[100%] py-2 bg-orange-500 rounded-full text-white font-semibold text-lg hover:bg-green-600 
+              transition duration-300'>  <a  target='blank'  href="https://docs.google.com/forms/d/e/1FAIpQLSeaqI-rEOpaQDZcYi4RvGRA7e1JJwMAWDuUfJmc5cbSC6oJxg/viewform">Apply Now</a></button>
             </div>
           </div>
 
