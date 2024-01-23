@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <main id='home' data-aos="fade-up" className='px-4 pt-[7rem] flex flex-wrap' >
+      <main id='home' data-aos="fade-up" className='px-4  pt-[7rem] lg:pt-[10rem] flex flex-wrap' >
 
         <section className="hero lg:flex justify-center">
 
